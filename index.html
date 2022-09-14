@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/styles.css" />
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+	<title>Form</title>
+</head>
+
+<body>
+	<div class="centrado">
+		<form action="#">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col">
+						<label class="form-label labe" for="name">Nombre:</label> <br />
+						<input type="text" class="form-control" name="name" id="name" placeholder="Nombre"
+							required />
+
+						<label class="form-label labe" for="name">Apellidos:</label><br />
+						<input type="text" class="form-control" name="Apellidos" id="Apellidos" placeholder="Apellidos"
+							required />
+
+						<label class="form-label labe" for="name">Fecha de Nacimiento:</label><br />
+						<input class="form-select" type="date" name="date" id="date" placeholder="date"
+							required />
+
+						<label class="form-label labe" for="Genero">Genero:</label><br />
+						<select class="form-select" name="Genero" id="Genero">
+							<option value="elegir">Elegir Genero</option>
+							<option value="Masculino">Masculino</option>
+							<option value="Femenino">Femenino</option>
+							<option value="Otro">Otro</option>
+						</select>
+					</div>
+					<div class="col">
+						<label class="form-label labe" for="phone">Teléfono Celular:</label><br />
+						<input type="tel" class="form-control" name="phone" id="phone" placeholder="Teléfono"
+							required />
+
+						<label class="form-label labe" for="email">Correo:</label><br />
+						<input type="email" class="form-control" name="email" id="email" placeholder="Email"
+							required />
+
+						<label class="form-label labe" for="email">Código Postal:</label><br />
+						<input type="email" class="form-control" name="email" id="email" placeholder="Email"
+							required />
+
+						<label class="form-label labe" for="email">Estado:</label><br />
+						<select class="form-select" name="estado" id="estado">
+							<option value="0" selected>Elegir un estado</option>
+							<option value="32">Aguascalientes</option>
+							<option value="1">Baja California</option>
+							<option value="2">Baja California Sur</option>
+							<option value="3">Campeche</option>
+							<option value="4">Chiapas</option>
+							<option value="5">Chihuahua</option>
+							<option value="6">Ciudad de Mexico</option>
+							<option value="7">Coahuila de zaragoza</option>
+							<option value="8">Colima</option>
+							<option value="9">Durango</option>
+							<option value="10">Estado de México</option>
+							<option value="11">Guanajuato</option>
+							<option value="12">Guerrero</option>
+							<option value="13">Hidalgo</option>
+							<option value="14">Jalisco</option>
+							<option value="15">Michoacan de Ocampo</option>
+							<option value="16">Morelos</option>
+							<option value="17">Nayarit</option>
+							<option value="18">Nuevo León</option>
+							<option value="19">Oaxaca</option>
+							<option value="20">Puebla</option>
+							<option value="21">Querétaro</option>
+							<option value="22">Quintana Roo</option>
+							<option value="23">San Luis Potosí</option>
+							<option value="24">Sinaloa</option>
+							<option value="25">Sonora</option>
+							<option value="26">Tabasco</option>
+							<option value="27">Tamaulipas</option>
+							<option value="28">Tlaxcala</option>
+							<option value="29">Veracruz</option>
+							<option value="30">Yucatán</option>
+							<option value="31">Zacatecas</option>
+						</select>
+					</div>
+					<div class="row boton">
+						<input type="submit" class="btn btn-primary 	" value="Enviar" /><br />
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
