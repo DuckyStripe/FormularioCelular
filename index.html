@@ -17,18 +17,16 @@
 		<form action="#">
 			<div class="container">
 				<div class="row justify-content-center">
-					<div class="col">
+					<div class="col listas">
 						<label class="form-label labe" for="name">Nombre:</label> <br />
-						<input type="text" class="form-control" name="name" id="name" placeholder="Nombre"
-							required />
+						<input type="text" class="form-control" name="name" id="name" placeholder="Nombre" required />
 
 						<label class="form-label labe" for="name">Apellidos:</label><br />
 						<input type="text" class="form-control" name="Apellidos" id="Apellidos" placeholder="Apellidos"
 							required />
 
 						<label class="form-label labe" for="name">Fecha de Nacimiento:</label><br />
-						<input class="form-select" type="date" name="date" id="date" placeholder="date"
-							required />
+						<input class="form-select" type="date" name="date" id="date" placeholder="date" required />
 
 						<label class="form-label labe" for="Genero">Genero:</label><br />
 						<select class="form-select" name="Genero" id="Genero">
@@ -38,18 +36,16 @@
 							<option value="Otro">Otro</option>
 						</select>
 					</div>
-					<div class="col">
+					<div class="col listas">
 						<label class="form-label labe" for="phone">Teléfono Celular:</label><br />
 						<input type="tel" class="form-control" name="phone" id="phone" placeholder="Teléfono"
 							required />
 
 						<label class="form-label labe" for="email">Correo:</label><br />
-						<input type="email" class="form-control" name="email" id="email" placeholder="Email"
-							required />
+						<input type="email" class="form-control" name="email" id="email" placeholder="Email" required />
 
 						<label class="form-label labe" for="email">Código Postal:</label><br />
-						<input type="email" class="form-control" name="email" id="email" placeholder="Email"
-							required />
+						<input type="email" class="form-control" name="email" id="email" placeholder="Email" required />
 
 						<label class="form-label labe" for="email">Estado:</label><br />
 						<select class="form-select" name="estado" id="estado">
@@ -87,6 +83,16 @@
 							<option value="30">Yucatán</option>
 							<option value="31">Zacatecas</option>
 						</select>
+					</div>
+					<div class="row boton">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" name="terminos" required>
+							<label class="form-check-label inp"> Acepto los <resaltado> términos y condiciones</resaltado> y los <resaltado> avisos de privacidad</resaltado></label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" name="marketing">
+							<label class="form-check-label inp"> Deseo recibir información comercial de Grupo Modelo</label>
+						</div>
 					</div>
 					<div class="row boton">
 						<input type="submit" class="btn btn-primary 	" value="Enviar" /><br />

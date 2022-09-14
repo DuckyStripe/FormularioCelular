@@ -6,7 +6,7 @@
 
 }
 .labe{
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: bold;
     color: #ffff;
     padding-top: 5px;
@@ -15,4 +15,24 @@
 }
 .boton{
     padding: 20px;
+}
+.listas>input{
+    width: 90%;
+}
+.listas>select{
+    width: 90%;
+
+}
+.inp{
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #ffff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px; 
+}
+resaltado{
+    color: rgb(179, 84, 36);
+    font-weight: bold;
+    font-size: 0.8rem;
 }
