@@ -1,20 +1,7 @@
-.centrado{
-    padding-top:25%;
-    padding-bottom:25%;
-    background-image: url("../img/back.jpeg");
-    background-size: cover;
 
-}
-.labe{
-    font-size: 1rem;
-    font-weight: bold;
-    color: #ffff;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 5px;
-}
 .boton{
-    padding: 20px;
+    padding-top: 1rem;
+    paggin-right: 1rem!important;
 }
 .listas>input{
     width: 90%;
@@ -23,16 +10,22 @@
     width: 90%;
 
 }
-.inp{
-    font-size: 0.8rem;
-    font-weight: bold;
-    color: #ffff;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 5px; 
+header{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #00724e;
 }
-resaltado{
-    color: rgb(179, 84, 36);
-    font-weight: bold;
-    font-size: 0.8rem;
+img{
+    width: 10%;
+    height: 10%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.centrado{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.btncolor{
+    background-color: #00724e;
+    color:#00724e ;
 }
