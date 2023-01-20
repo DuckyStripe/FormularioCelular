@@ -22,35 +22,57 @@
 				<div class="row justify-content-center">
 					<div class="col listas">
 						<label class="form-label labe" for="name">División:</label> <br />
-						<input type="text" class="form-control" name="Division" id="Division" placeholder="División"
+						<input type="text" class="form-control" onfocusout="validateDivision()" name="Division" id="Division" 
+						maxlength="2" pattern="[A-Z]{2}"
+						placeholder="División"
 							required />
 
 						<label class="form-label labe" for="name">Telefono Fijo:</label><br />
-						<input type="phone" class="form-control" name="TelFijo" id="TelFijo" placeholder="55 5555 5555"
+						<input type="phone" 
+						onfocusout="validateTElFijo()" class="form-control" name="TelFijo"
+						
+						pattern="[0-9]{10}"id="TelFijo" placeholder="5555555555"
 							required />
 
 						<label class="form-label labe" for="name">Telefono Celular:</label><br />
-						<input class="form-select" type="phone" name="TelCel" id="TelCel" placeholder="55 5555 5555"
+						<input class="form-control" 
+						onfocusout="validateTelMovil()" type="phone" name="TelCel" id="TelCel" 
+						pattern="[0-9]{10}"id="TelFijo"
+						placeholder="5555555555"
 							required />
 
 						<label class="form-label labe" for="name">Numero de Servicio:</label><br />
-						<input class="form-select" type="number" name="NumberService" id="NumberService"
+						<input class="form-select" 
+						onfocusout="validateNumberService()" type="number" name="NumberService" id="NumberService"
+						pattern="[0-9]{12}"
 							placeholder="012345678912" required />
 
 					</div>
 					<div class="col listas">
 						<label class="form-label labe" for="phone">Area (Cuenta):</label><br />
-						<input type="text" class="form-control" name="Area" id="Area" placeholder="20DP21A018882495"
+						<input type="text" 
+						onfocusout="validateArea()" class="form-control" name="Area" id="Area" 
+						pattern="[A-Z-a-z-0-9]{12}"
+						placeholder="20DP21A018882495"
 							required />
 
-						<label class="form-label labe" for="email">Zona:</label><br />
-						<input type="text" class="form-control" name="Zona" id="Zona" placeholder="DP21A" required />
+						<label class="form-label labe" for="Zona">Zona:</label><br />
+						<input type="text" 
+						onfocusout="validateZona()" 
+						pattern="[A-Z-a-z-0-9]{5}"
+						class="form-control" name="Zona" id="Zona" placeholder="DP21A" required />
 
-						<label class="form-label labe" for="email">Colonia:</label><br />
-						<input type="text" class="form-control" name="Colonia" id="Colonia"
+						<label class="form-label labe" for="Colonia">Colonia:</label><br />
+						<input type="text" 
+						pattern="[A-Z-a-z-0-9]{5}"
+						onfocusout="validateColonia()" 
+						class="form-control" name="Colonia" id="Colonia"
 							placeholder="M21271 - OBRERA" required />
 						<label class="form-label labe" for="email">Solicitudes:</label><br />
-						<input type="TEXT" class="form-control" name="Solicitudes" id="Solicitudes"
+						<input type="TEXT" 
+						"[A-Z-a-z-0-9]"
+						onfocusout="validateSolicitudes()" 
+						class="form-control" name="Solicitudes" id="Solicitudes"
 							placeholder="M2132713588" required />
 
 
@@ -59,7 +81,9 @@
 
 						<div class="form-group">
 							<label class="form-label labe" for="email">Observaciones:</label><br />
-							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+							<textarea class="form-control" id="Observaciones" 
+							onfocusout="validateObservaciones()" 
+							rows="3"></textarea>
 						</div>
 					</div>
 					<div class="row boton">
@@ -102,6 +126,7 @@
 			</table>
 		</div>
 	</div>
+	<script src="js/script.js"></script>
 	<!-- JavaScript Bundle with Popper -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
