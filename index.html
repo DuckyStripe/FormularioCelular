@@ -22,28 +22,28 @@
 				<div class="row justify-content-center">
 					<div class="col listas">
 						<label class="form-label labe" for="name">División:</label> <br />
-						<input type="text" class="form-control" onfocusout="validateDivision()" name="Division" id="Division" 
+						<input type="text" class="form-control" onchange="validateDivision()" name="Division" id="Division" 
 						maxlength="2" pattern="[A-Z]{2}"
 						placeholder="División"
 							required />
 
 						<label class="form-label labe" for="name">Telefono Fijo:</label><br />
 						<input type="phone" 
-						onfocusout="validateTElFijo()" class="form-control" name="TelFijo"
+						onchange="validateTElFijo()" class="form-control" name="TelFijo"
 						
 						pattern="[0-9]{10}"id="TelFijo" placeholder="5555555555"
 							required />
 
 						<label class="form-label labe" for="name">Telefono Celular:</label><br />
 						<input class="form-control" 
-						onfocusout="validateTelMovil()" type="phone" name="TelCel" id="TelCel" 
+						onchange="validateTelMovil()" type="phone" name="TelCel" id="TelCel" 
 						pattern="[0-9]{10}"id="TelFijo"
 						placeholder="5555555555"
 							required />
 
 						<label class="form-label labe" for="name">Numero de Servicio:</label><br />
 						<input class="form-select" 
-						onfocusout="validateNumberService()" type="number" name="NumberService" id="NumberService"
+						onchange="validateNumberService()" type="number" name="NumberService" id="NumberService"
 						pattern="[0-9]{12}"
 							placeholder="012345678912" required />
 
@@ -51,27 +51,27 @@
 					<div class="col listas">
 						<label class="form-label labe" for="phone">Area (Cuenta):</label><br />
 						<input type="text" 
-						onfocusout="validateArea()" class="form-control" name="Area" id="Area" 
+						onchange="validateArea()" class="form-control" name="Area" id="Area" 
 						pattern="[A-Z-a-z-0-9]{12}"
 						placeholder="20DP21A018882495"
 							required />
 
 						<label class="form-label labe" for="Zona">Zona:</label><br />
 						<input type="text" 
-						onfocusout="validateZona()" 
+						onchange="validateZona()" 
 						pattern="[A-Z-a-z-0-9]{5}"
 						class="form-control" name="Zona" id="Zona" placeholder="DP21A" required />
 
 						<label class="form-label labe" for="Colonia">Colonia:</label><br />
 						<input type="text" 
 						pattern="[A-Z-a-z-0-9]{5}"
-						onfocusout="validateColonia()" 
+						onchange="validateColonia()" 
 						class="form-control" name="Colonia" id="Colonia"
 							placeholder="M21271 - OBRERA" required />
 						<label class="form-label labe" for="email">Solicitudes:</label><br />
 						<input type="TEXT" 
 						"[A-Z-a-z-0-9]"
-						onfocusout="validateSolicitudes()" 
+						onchange="validateSolicitudes()" 
 						class="form-control" name="Solicitudes" id="Solicitudes"
 							placeholder="M2132713588" required />
 
@@ -82,7 +82,7 @@
 						<div class="form-group">
 							<label class="form-label labe" for="email">Observaciones:</label><br />
 							<textarea class="form-control" id="Observaciones" 
-							onfocusout="validateObservaciones()" 
+							onchange="validateObservaciones()" 
 							rows="3"></textarea>
 						</div>
 					</div>
